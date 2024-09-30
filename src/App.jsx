@@ -8,7 +8,7 @@ import Footer from "./components/Footer.jsx";
 
 const App = () => {
     return (
-        <main className='text-neutral-300 text-sm antialiased'>
+        <main className='text-neutral-300 text-sm antialiased font-lato'>
             <Navbar/>
             <HeroSection/>
             <HowItWorks/>

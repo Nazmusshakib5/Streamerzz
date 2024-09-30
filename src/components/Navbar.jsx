@@ -1,6 +1,12 @@
 import {useState} from "react";
 import logo from '../assets/logo.png'
 import {RiCloseFill, RiMenu3Line} from "@remixicon/react";
+
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+
 const Navbar = () => {
     const [isNavOpen,setIsNavOpen]=useState(false)
     const ToggleMenu=()=>{
@@ -11,17 +17,17 @@ const Navbar = () => {
             <div className='text-neutral-500 bg-black/60 backdrop-blur-md
             max-w-7xl mx-auto px-4 py-3 flex justify-between items-center rounded-xl
             border border-neutral-800'>
-                <a href='#heroSection'><img src={logo} alt='image Logo' width={120} height={24}/></a>
+                <a href='javascript:void(0)' onClick={()=>scrollToSection('heroSection')}><img src={logo} alt='image Logo' width={120} height={24}/></a>
 
                 {/*Toggle Nav Items -----------------------------*/}
                 <div className='hidden md:flex space-x-6'>
-                    <a href='#works' className='hover:text-neutral-200'>
+                    <a href='javascript:void(0)' onClick={()=>scrollToSection('works')} className='hover:text-neutral-200'>
                         How it Works
                     </a>
-                    <a href='#pricing' className='hover:text-neutral-200'>
+                    <a href='javascript:void(0)' onClick={()=>scrollToSection('pricing')} className='hover:text-neutral-200'>
                         Pricing
                     </a>
-                    <a href='#testimonials' className='hover:text-neutral-200'>
+                    <a href='javascript:void(0)' onClick={()=>scrollToSection('testimonials')} className='hover:text-neutral-200'>
                         Testimonials
                     </a>
                 </div>
@@ -29,14 +35,14 @@ const Navbar = () => {
                 {/*Toggle Nav Buttons----------------------------------------*/}
 
                 <div className='hidden md:flex space-x-4 items-center'>
-                    <a href='#' className='hover:text-neutral-200'>
+                    <a href='javascript:void(0)' className='hover:text-neutral-200'>
                         Login
                     </a>
-                    <a href='#' className='hover:text-neutral-700 border border-neutral-700
+                    <a href='javascript:void(0)' className='hover:text-neutral-700 border border-neutral-700
                     text-white py-2 px-4 rounded-lg transition'>
                         Get a Demo
                     </a>
-                    <a href='#' className='hover:bg-blue-500 bg-blue-600 text-white py-2 px-4
+                    <a href='javascript:void(0)' className='hover:bg-blue-500 bg-blue-600 text-white py-2 px-4
                     rounded-lg transition'>
                         Start Free Trail
                     </a>
