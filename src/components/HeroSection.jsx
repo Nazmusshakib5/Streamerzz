@@ -33,7 +33,9 @@ const HeroSection = () => {
             variants={containerVariants}
             initial='hidden'
             animate='visible'
-            className='mt-28 lg:mt-36'>
+            className='mt-28 lg:mt-36'
+            id='heroSection'
+        >
             <div className='max-w-7xl mx-auto flex flex-col items-center
             text-center'>
                 <motion.div

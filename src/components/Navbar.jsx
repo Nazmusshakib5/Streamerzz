@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className='text-neutral-500 bg-black/60 backdrop-blur-md
             max-w-7xl mx-auto px-4 py-3 flex justify-between items-center rounded-xl
             border border-neutral-800'>
-                <img src={logo} alt='image Logo' width={120} height={24}/>
+                <a href='#heroSection'><img src={logo} alt='image Logo' width={120} height={24}/></a>
 
                 {/*Toggle Nav Items -----------------------------*/}
                 <div className='hidden md:flex space-x-6'>
